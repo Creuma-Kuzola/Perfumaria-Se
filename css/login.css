@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Leckerli One";
+    src: url("../fonts/leckerli-one/LeckerliOne-Regular.ttf");
+}
+
+body{
+
+    overflow-x: hidden;
+    font-family: 'Noto Serif';
+}
+
+.div-section{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+}
+
+.left-div{
+    width: 50vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.left-div-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.p-tittle{
+    
+}
