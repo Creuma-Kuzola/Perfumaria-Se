@@ -54,7 +54,7 @@ body{
 
 .p-tittle{
     font-size: 2.8rem;
-    margin-top: 25vh;
+    margin-top: 11vh;
     font-family: "Noto Serif";
     padding-left: 9vw;
 }
@@ -101,7 +101,6 @@ body{
     border: none;
     background:none;
     font-size: 2rem;
-    font-family:"Source Sans Pro";
     color: #fff;
     width: 30vw;
     height: 7.5vh;
@@ -110,15 +109,18 @@ body{
     cursor: pointer;
 }
 
-.link-ainda{
+.btn-login:active{
 
+    cursor: pointer;
+}
+
+.link-ainda{
     text-decoration: none;
     color: #000;
 }
 
 
 .link-ainda:hover{
-
     font-weight: bold;
 }
 
