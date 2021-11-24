@@ -19,6 +19,14 @@
     src: url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf");
 }
 
+.header{
+    position: fixed;
+    background-color:#fff;
+    width: 100vw;
+    height: 10vh;
+    z-index: 999;
+}
+
 body{
 
     overflow-x: hidden;
@@ -41,8 +49,8 @@ body{
 
 .ul-menu{
 
-    margin-top: -4.5vh;
-    margin-left: 68.3vw;
+    margin-top: -5.5vh;
+    margin-left: 45vw;
 }
 
 .ul-menu-a{
@@ -51,7 +59,11 @@ body{
     color: black;
     font-family: "Noto Serif";
     padding-left: 2vw;
-    
+}
+
+.ul-menu-a:hover{
+
+    font-weight: bold;
 }
 
 .a-special{
@@ -72,7 +84,7 @@ body{
     position: absolute;
     margin-left: -3.7vw;
     margin-top: 4.5vh;
-    border-radius: 0.5vh;
+    border-radius: 1.5vh;
 }
 
 .btn-login{
@@ -80,11 +92,18 @@ body{
     border: none;
     color:#fff;
     width: 6.5vw;
-    height: 4.9vh;
+    height: 5vh;
     background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
-    margin-left: 2vw;
+    margin-left: 8.5vw;
     border-radius: 0.5vh;
     padding-right: -5vw;
+}
+
+
+.btn-login:hover{
+
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
 }
 
 .ul-menu-a:last-child{
@@ -100,7 +119,7 @@ body{
 
 .first-section-left{
 
-    margin-top: 32vh;
+    margin-top: 40vh;
     position: relative;
     left: 12vw;
     width: 60vw;
@@ -113,7 +132,7 @@ body{
 }
 
 .first-section-left-conteudo{
-    font-size: 1.6rem;
+    font-size: 1.69rem;
     margin-top: 1vh;
 }
 
@@ -122,7 +141,7 @@ body{
     color: #fff;
     background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
     width: 8.5vw;
-    height: 5.2vh;
+    height: 5.4vh;
     font-size: 1.5rem;
     font-family: "Noto Serif";
     border-radius: 0.5vh;
@@ -131,6 +150,14 @@ body{
 
 .btn-ver-produtos-a{
     text-decoration: none;
+}
+
+
+.btn-ver-produtos:hover{
+
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .first-section-right{
@@ -143,5 +170,5 @@ body{
     width: 30vw;
     object-fit: cover;
     margin-left: 10vw;
-    margin-top: 2.5vh;
+    margin-top: 10vh;
 }
