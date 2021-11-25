@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: "Noto Serif Light";
+    src: url("../fonts/noto-serif/NotoSerif-Light.ttf");
+} 
+
+@font-face {
     font-family: "Leckerli One";
     src: url("../fonts/leckerli-one/LeckerliOne-Regular.ttf");
 }
@@ -17,6 +22,11 @@
 @font-face {
     font-family: "Source Sans Pro";
     src: url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Source Sans Pro Light";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Light.ttf");
 }
 
 .header{
@@ -38,7 +48,7 @@ body{
     font-family: "Leckerli One";
     font-size: 3rem;
     margin-top: 2vh;
-    margin-left: 20vh;
+    margin-left: 8vh;
     background: linear-gradient(#F50679 0%, #ED811D);
     color: black;
     background-clip: text;
@@ -121,7 +131,7 @@ body{
 
     margin-top: 40vh;
     position: relative;
-    left: 12vw;
+    left: 6vw;
     width: 60vw;
 }
 
@@ -171,4 +181,106 @@ body{
     object-fit: cover;
     margin-left: 10vw;
     margin-top: 10vh;
+}
+
+.second-section{
+
+    margin-top: 12vh;
+    
+}
+
+.orange-circle{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 2.3rem;
+    background-color: #E07818;
+    position: relative;
+    left: 39.5vw;
+    top: -5vh;
+
+}
+
+.orange-circle::after{
+
+    content: ' ';
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 1.1rem;
+    background-color: #F50679;
+    position: absolute;
+    left: 1.5vw;
+    top: 3.8vh;
+}
+
+.p-title-special{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Noto Serif";
+    font-weight: bold;
+}
+
+.promotion-section{
+    display: grid;
+    grid-template-columns:3;
+    grid-auto-flow: column;
+        
+    gap:0 2vh;
+    margin-top: 6vh;
+    justify-items: center;
+    justify-content: center;
+}
+
+.promotion-section-item{
+    width: 30vw;
+    height: 60vh;
+}
+
+.promotion-section-item-img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.promotion-section-item-description{
+
+    margin-top: -1vh;
+    border: 0.5vh solid #c4c4c4;
+    border-top: 0;
+    background-color: #fff;
+    height: 18vh;
+    padding: 2vh;
+}
+
+.promotion-section-item-description--perfume-name{
+
+    font-size: 1.8rem;
+    font-family: "Noto Serif Light";
+}
+
+.promotion-section-item-description--perfume-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    padding-top: 1vh;
+}
+
+.promotion-section-item-description--btn-shop{
+
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 8.5vw;
+    height: 5.4vh;
+    font-size: 1.55rem;
+    font-family: "Noto Serif";
+    border-radius: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 19vw;
+
+}
+
+.promotion-section-item-description--btn-shop a{
+
+    text-decoration: none;
+    color: #fff;
 }
