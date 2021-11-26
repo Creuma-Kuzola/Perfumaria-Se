@@ -194,7 +194,7 @@ body{
     margin-top: 12vh;
 }
 
-.orange-circle{
+.orange-circle,.orange-circle-special{
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 2.3rem;
@@ -204,7 +204,7 @@ body{
     top: -5vh;
 }
 
-.orange-circle::after{
+.orange-circle::after,.orange-circle-special::after{
     content: ' ';
     width: 1.1rem;
     height: 1.1rem;
@@ -291,7 +291,7 @@ body{
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     justify-items: center;
-    margin-top: 15vh;
+    margin-top: 10vh;
     gap: 4vw 0;
 }
 
@@ -354,3 +354,8 @@ body{
     text-decoration: none;
     color: #fff;
 }
+
+.orange-circle-special{
+    left: 37vw;
+}
+
