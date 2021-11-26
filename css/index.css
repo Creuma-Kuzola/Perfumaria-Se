@@ -120,7 +120,6 @@ body{
 
 
 .btn-login:hover{
-
     background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
     font-weight: bold;
 }
@@ -359,3 +358,73 @@ body{
     left: 37vw;
 }
 
+.footer{
+
+    background-color: #3E3A3A;
+    width: 100vw;
+    height: 30vh;
+    color: #fff;
+}
+
+
+.div-icones-footer{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    gap:0 3vh;
+    padding-top: 15vh;
+}
+
+.icones-footer{
+    width: 2.5vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.last-div{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+.p-se-footer{
+
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-left: 3vw;
+}
+
+.p-todos-os{
+    font-size: 1.69rem;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.btn-login-footer{
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5vh;
+    width: 6.5vw;
+    height: 5vh;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+.btn-login-footer:hover{
+    background-color: #000;
+}
+
+.btn-login-footer a{
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
