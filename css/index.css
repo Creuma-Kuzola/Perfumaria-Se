@@ -438,7 +438,7 @@ body{
 
     background-color: #3E3A3A;
     width: 100vw;
-    height: 30vh;
+    height: 25vh;
     color: #fff;
 }
 
@@ -450,7 +450,7 @@ body{
     place-items: center;
     justify-content: center;
     gap:0 3vh;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 
 .icones-footer{
