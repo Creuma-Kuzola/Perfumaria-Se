@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto Serif Light";
+    src: url("../fonts/noto-serif/NotoSerif-Light.ttf");
+} 
+
+@font-face {
+    font-family: "Leckerli One";
+    src: url("../fonts/leckerli-one/LeckerliOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Source Sans Pro Light";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Light.ttf");
+}
+
+.header{
+    position: fixed;
+    background-color:#fff;
+    width: 100vw;
+    height: 10vh;
+    z-index: 999;
+    box-shadow:1vw 0 0.5vw #c4c4c4;
+}
+
+body{
+
+    overflow-x: hidden;
+    font-family:"Source Sans Pro";
+}
+
+.paragraph-se{
+
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-top: 2vh;
+    margin-left: 8vh;
+    background: linear-gradient(#F50679 0%, #ED811D);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ul-menu{
+
+    margin-top: -5.5vh;
+    margin-left: 45vw;
+}
+
+.ul-menu-a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #000;
+    font-family: "Noto Serif";
+    padding-left: 2vw;
+    position: relative;
+    text-align: center;
+}
+
+.ul-menu-a:hover{
+    font-weight: bold;
+}
+
+.ul-menu-a[href="#"]{
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-family: "Noto Serif";
+}
+
+.ul-menu-a[href="#"]:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.ul-menu-a[href="#"]::after{
+    content:'';
+    position: absolute;
+    height: 0.7vh;
+    width: 84%;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    left:63%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+    border-radius: 0.5vw;
+}
+
+.btn-login{
+    border: none;
+    color:#fff;
+    width: 6.5vw;
+    height: 5vh;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    margin-left: 8.5vw;
+    border-radius: 0.5vh;
+    padding-right: -5vw;
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.ul-menu-a:last-child{
+    color: #fff;
+    padding-left: 0;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
+
+.section-image{
+
+    margin-bottom: 45vh;
+}
+
+.section-image-img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;   
+}
+
+.section-image-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    color: #fff;
+    margin-top: -50vh;
+    margin-left: 3vw;
+}
+
+.section-image-description{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+
+.second-section{
+   
+}
+
+.orange-circle,.orange-circle-special{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 2.3rem;
+    background-color:#ED811D;
+    position: relative;
+    left: 39.5vw;
+    top: -5vh;
+}
+
+.orange-circle::after,.orange-circle-special::after{
+    content: ' ';
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 1.1rem;
+    background-color: #F50679;
+    position: absolute;
+    left: 1.5vw;
+    top: 3.8vh;
+}
+
+.p-title-special{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Noto Serif";
+    font-weight: bold;
+}
+
+.promotion-section{
+    display: grid;
+    grid-template-columns:6;
+    grid-template-rows: 2;
+    grid-auto-flow: column;
+    gap:4vw 2vw;
+    margin-top: 6vh;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 14vh;
+}
+
+.promotion-section-item{
+    width: 30vw;
+    height: 60vh;
+}
+
+.promotion-section-item-img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.promotion-section-item-description{
+    margin-top: -1vh;
+    border: 0.5vh solid #c4c4c4;
+    border-top: 0;
+    background-color: #fff;
+    height: 18vh;
+    padding: 2vh;
+}
+
+.promotion-section-item-description--perfume-name{
+    font-size: 1.8rem;
+    font-family: "Noto Serif Light";
+}
+
+.promotion-section-item-description--perfume-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    padding-top: 1vh;
+}
+
+.promotion-section-item-description--btn-shop{
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 7vw;
+    height: 5.4vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 20.2vw;
+    cursor: pointer;
+}
+
+.promotion-section-item-description--btn-shop a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.promotion-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.one-promotion{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.two-promotion{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.three-promotion{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.four-promotion{
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.five-promotion{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.six-promotion{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+
+.news-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    justify-items: center;
+    margin-top: 10vh;
+    gap: 4vw 0;
+    margin-bottom: 20vh;
+}
+
+.news-section-item{
+    width: 40vw;
+    height: 66vh;
+}
+
+.item-1{
+    margin-left: 11vh;
+}
+
+.item-2{
+    margin-right: 11vh;
+}
+
+.news-section-item-img{
+    width: 40vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.news-section-item-description{
+    margin-top: -1vh;
+    border: 0.5vh solid #c4c4c4;
+    border-top: 0;
+    background-color: #fff;
+    height: 17vh;
+    padding: 2vh;
+}
+
+.news-section-item-description--perfume-name{
+
+    font-size: 1.8rem;
+    font-family: "Noto Serif Light";
+}
+
+.news-section-item-description--perfume-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    padding-top: 1vh;
+}
+
+.news-section-item-description--btn-shop{
+
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 7vw;
+    height: 5.4vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    margin-top: -1vh;
+    margin-left: 30.2vw;
+    cursor: pointer;
+}
+
+.news-section-item-description--btn-shop a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.news-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.orange-circle-special{
+    left: 37vw;
+}
+
+
+.footer{
+
+    background-color: #3E3A3A;
+    width: 100vw;
+    height: 25vh;
+    color: #fff;
+}
+
+.div-icones-footer{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    gap:0 3vh;
+    padding-top: 10vh;
+}
+
+.icones-footer{
+    width: 2.5vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.last-div{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+.p-se-footer{
+
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-left: 3vw;
+}
+
+.p-todos-os{
+    font-size: 1.69rem;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.btn-login-footer{
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5vh;
+    width: 6.5vw;
+    height: 5vh;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+.btn-login-footer:hover{
+    background-color: #000;
+    font-weight: bold;
+}
+
+.btn-login-footer a{
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.btn-login-footer a:hover{
+
+    font-weight: bolder;
+}

@@ -69,13 +69,14 @@ body{
     color: black;
     font-family: "Noto Serif";
     padding-left: 2vw;
+    position: relative;
 }
 
 .ul-menu-a:hover{
     font-weight: bold;
 }
 
-.a-special{
+.ul-menu-a[href="#"]{
     background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -84,7 +85,7 @@ body{
     font-family: "Noto Serif";
 }
 
-.a-special:hover{
+.ul-menu-a[href="#"]:hover{
     background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -92,15 +93,16 @@ body{
     font-weight: bolder;
 }
 
-.a-special::after{
-    content: ' ';
-    width: 4vw;
-    height: 0.7vh;
-    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+.ul-menu-a[href="#"]::after{
+    content:'';
     position: absolute;
-    margin-left: -3.7vw;
-    margin-top: 4.5vh;
-    border-radius: 0.7vw;
+    height: 0.7vh;
+    width: 77%;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    left:67%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+    border-radius: 0.5vw;
 }
 
 .btn-login{
@@ -158,7 +160,6 @@ body{
     width: 8.5vw;
     height: 5.4vh;
     font-size: 1.5rem;
-    font-family: "Noto Serif";
     border-radius: 0.5vh;
     margin-top: 3vh;
 }
