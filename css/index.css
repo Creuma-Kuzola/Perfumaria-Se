@@ -57,7 +57,6 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-
 .ul-menu{
 
     margin-top: -5.5vh;
@@ -78,22 +77,20 @@ body{
 
 .a-special{
     background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
-    color: black;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: "Noto Serif";
 }
 
 .a-special:hover{
     background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
-    color: black;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
 }
-
 
 .a-special::after{
     content: ' ';
@@ -103,7 +100,7 @@ body{
     position: absolute;
     margin-left: -3.7vw;
     margin-top: 4.5vh;
-    border-radius: 1.5vh;
+    border-radius: 0.7vw;
 }
 
 .btn-login{
@@ -115,9 +112,8 @@ body{
     margin-left: 8.5vw;
     border-radius: 0.5vh;
     padding-right: -5vw;
-    
+    cursor: pointer;
 }
-
 
 .btn-login:hover{
     background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
@@ -197,7 +193,7 @@ body{
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 2.3rem;
-    background-color: #E07818;
+    background-color:#ED811D;
     position: relative;
     left: 39.5vw;
     top: -5vh;
@@ -276,13 +272,19 @@ body{
     border-radius: 0.5vh;
     margin-top: 0.5vh;
     margin-left: 20.2vw;
-
+    cursor: pointer;
 }
 
 .promotion-section-item-description--btn-shop a{
 
     text-decoration: none;
     color: #fff;
+}
+
+
+.promotion-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
 }
 
 .news-section{
@@ -346,7 +348,7 @@ body{
     border-radius: 0.5vh;
     margin-top: -1vh;
     margin-left: 30.2vw;
-
+    cursor: pointer;
 }
 
 .news-section-item-description--btn-shop a{
@@ -354,6 +356,80 @@ body{
     color: #fff;
 }
 
+.news-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+
+.image-section{
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+}
+
+.image-section-img{
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+.image-section-p{
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-top: -15vh;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.newsletter-session{
+    width: 100vw;
+    height: 30vh;
+    background-color: rgba(196, 196, 196, 0.12);
+    margin-top: 5vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    justify-content:center;
+    margin-bottom: 15vh;
+}
+
+.newsletter-session-input{
+    width: 30vw;
+    height: 5vh;
+    padding-left: 3vh;
+    border: 0.3vh solid #A89E9E;
+}
+
+::placeholder{
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.newsletter-session--btn-send{
+
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 6.5vw;
+    height: 5vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    margin-left: 4vw;
+}
+
+.newsletter-session--btn-send a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.newsletter-session--btn-send:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
 .orange-circle-special{
     left: 37vw;
 }
@@ -365,7 +441,6 @@ body{
     height: 30vh;
     color: #fff;
 }
-
 
 .div-icones-footer{
 
@@ -418,6 +493,7 @@ body{
 
 .btn-login-footer:hover{
     background-color: #000;
+    font-weight: bold;
 }
 
 .btn-login-footer a{
@@ -429,3 +505,9 @@ body{
     font-weight: bold;
 }
 
+@media screen and (max-width: 1024px) {
+    
+    
+
+
+}
