@@ -445,3 +445,56 @@ body{
 
     font-weight: bolder;
 }
+
+
+@media screen and (max-width: 1024px) {
+    
+    .ul-menu{
+    
+        margin-top: -5.5vh;
+        margin-left: 34vw;
+    }
+    
+    .btn-login{
+        width: 7.5vw;
+        margin-left: 7vw;
+    }
+    
+    .orange-circle,.orange-circle-special, .orange-circle-special1{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2.3rem;
+        background-color:#ED811D;
+        position: relative;
+        left: 36.5vw;
+        top: -5.5vh;
+    }
+    
+    .orange-circle::after,.orange-circle-special::after,.orange-circle-special1::after{
+        content: ' ';
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 1.1rem;
+        background-color: #F50679;
+        position: absolute;
+        left: 1.5vw;
+        top: 4.7vh;
+    }
+    
+    .p-title-special{
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: "Noto Serif";
+        font-weight: bold;
+    }
+    
+    .orange-circle-special{
+        left: 33.5vw;
+    }
+    
+    .orange-circle-special1{
+        left: 24.5vw;
+    }
+    
+}
+    
