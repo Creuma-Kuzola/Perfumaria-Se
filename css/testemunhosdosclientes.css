@@ -129,16 +129,199 @@ body{
     font-weight: bold;
 }
 
-.section-video{
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
+.section-image{
+
+    margin-bottom: 35vh;
 }
 
-.section-video-video{
- 
-    width: 100%;
-    height: 100%;
+.section-image-img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;   
+}
+
+.section-image-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    color: #fff;
+    margin-top: -50vh;
+    margin-left: 3vw;
+}
+
+.section-image-description{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+ .orange-circle-special1{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 2.3rem;
+    background-color:#ED811D;
+    position: relative;
+    left: 30.5vw;
+    top: -5vh;
+}
+
+.orange-circle-special1::after{
+    content: ' ';
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 1.1rem;
+    background-color: #F50679;
+    position: absolute;
+    left: 1.5vw;
+    top: 3.8vh;
+}
+
+.second-section{
+    margin-top: 12vh;
+}
+
+
+.p-title-special{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Noto Serif";
+    font-weight: bold;
+}
+
+.testimony-of-clients-section{
+
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+.div-fifth-section-description-img{
+
+    width: 15vw;
+    height: 15vw;
     object-fit: cover;
-    margin-top: 10vh;
+    border: 0.9vh solid #ED811D;
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.div-fifth-section-description-p-name{
+
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 4.5vh;
+}
+
+.div-fifth-section-description-p-description{
+    font-size: 1.2rem;
+    padding: 3vh;
+    text-align: center;
+    border: 0.2vw solid #eceaea;
+    border-radius: 0.3vw;
+    margin-bottom: 5vh;
+}
+
+.fifth-section-description-span{
+
+    font-family: "Source Sans Pro";
+}
+
+.div-fifth-section-description-div-circles{
+
+    display: flex;
+    margin-bottom: 2vh;
+    align-items: center;
+
+}
+
+.div-fifth-section-description-div-circles--item{
+
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 0.5vh solid #F50679;
+    margin: 0 0.25rem;
+}
+
+.active-item-quote{
+    width: 1.3vw;
+    height: 1.4vw;
+    background-color: #F50679;
+    border: none;
+}
+
+
+.footer{
+
+    background-color: #3E3A3A;
+    width: 100vw;
+    height: 25vh;
+    color: #fff;
+}
+
+.div-icones-footer{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    gap:0 3vh;
+    padding-top: 10vh;
+}
+
+.icones-footer{
+    width: 2.5vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.last-div{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+.p-se-footer{
+
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-left: 3vw;
+}
+
+.p-todos-os{
+    font-size: 1.69rem;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.btn-login-footer{
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5vh;
+    width: 6.5vw;
+    height: 5vh;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+.btn-login-footer:hover{
+    background-color: #000;
+    font-weight: bold;
+}
+
+.btn-login-footer a{
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
