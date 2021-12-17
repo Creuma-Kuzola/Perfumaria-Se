@@ -288,8 +288,6 @@ body{
     grid-row: 2/3;
 }
 
-
-
 .news-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
