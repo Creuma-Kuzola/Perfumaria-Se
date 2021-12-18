@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .div-section{
     width: 100vw;
     height: 100vh;
@@ -302,8 +308,6 @@
 
 @media screen and (max-width:500px)
 {
-
-    
     .right-div{
         width:80vw;
     }
@@ -325,8 +329,6 @@
         padding-left: 30vw;
         margin-top: -18vh;
     }
-
-
 
     .p-ainda{
        
