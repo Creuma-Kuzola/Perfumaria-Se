@@ -17,19 +17,19 @@ const quotes = [
         quote: 'Eu gostei tanto de estudar na LIG porque os meus professores eram super pacientes e profissionais.'
     },
     {
-        img: 'tahiti-spears-Me-MSv_dUNU-unsplash.jpg',
-        name: 'Rosied Dekgado',
+        img: 'pexels-vinicius-wiesehofer-1130626.jpg',
+        name: 'Rosied Delgado',
         quote: 'Uma escola excelente em todos os sentidos, desde as condições de ensino até aos entusiasmados funcionários. Recomendo '
     },
     
     {
-        img: 'logan-weaver-yRpe13BHdKw-unsplash.jpg',
+        img: 'etty-fidele-J1jYLLlRpA4-unsplash.jpg',
         name: 'Catarina Lisica',
         quote: 'Eu gostei tanto de estudar na LIG porque os meus professores eram super pacientes e profissionais.'
     },
     
     {
-        img: 'logan-weaver-yRpe13BHdKw-unsplash.jpg',
+        img: 'gabrielle-henderson-DgCPTkDqhHg-unsplash.jpg',
         name: 'Maria Pedro',
         quote: 'Eu gostei tanto de estudar na LIG porque os meus professores eram super pacientes e profissionais.'
     }

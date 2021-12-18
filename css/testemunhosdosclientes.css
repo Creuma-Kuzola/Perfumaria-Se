@@ -181,7 +181,6 @@ body{
     margin-top: 12vh;
 }
 
-
 .p-title-special{
     text-align: center;
     font-size: 3.5rem;
@@ -324,4 +323,219 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+
+    .ul-menu{
+        margin-left: 37vw;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+
+    .ul-menu{
+        margin-left: 33vw;
+    }
+
+    .orange-circle-special1{
+        left: 25.5vw;
+        top: -6vh;
+    }
+
+    .orange-circle-special1::after{
+        left: 1.5vw;
+        top: 5vh;
+    }
+
+    .testimony-of-clients-section{
+
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        margin-bottom: 15vh;
+    }
+
+    .div-fifth-section-description-img{
+
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .div-fifth-section-description-p-name{
+        font-size: 2rem;
+
+    }
+
+    .div-fifth-section-description-p-description{
+        font-size: 1.4rem;
+        padding: 3vh;
+        margin: 4vw;
+        margin-top: 0;
+        margin-bottom: 5vh;
+    }
+
+    .div-fifth-section-description-div-circles--item{
+
+        width: 1.1vw;
+        height: 1.1vw;
+        border-radius: 50%;
+        border: 0.5vh solid #F50679;
+        margin: 0 0.25rem;
+    }
+
+    .active-item-quote{
+        width: 1.6vw;
+        height: 1.6vw;
+        background-color: #F50679;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width:800px){
+
+    .orange-circle-special1{
+        left: 16vw;
+        top: -5.5vh;
+    }
+
+    .orange-circle-special1::after{
+        left: 2vw;
+        top: 4.5vh;
+    }
+
+    .testimony-of-clients-section{
+
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        margin-bottom: 15vh;
+    }
+
+    .div-fifth-section-description-img{
+
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .div-fifth-section-description-p-name{
+        font-size: 2rem;
+
+    }
+
+    .div-fifth-section-description-p-description{
+        font-size: 1.4rem;
+        padding: 3vh;
+        margin: 4vw;
+        margin-top: 0;
+        margin-bottom: 5vh;
+    }
+
+    .div-fifth-section-description-div-circles--item{
+        width: 1.3vw;
+        height: 1.3vw;
+    }
+
+    .active-item-quote{
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+
+    .icones-footer{
+        width: 3.5vw;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .btn-login-footer{
+        width: 9vw;
+    }
+}
+
+
+@media screen and (max-width:500px){
+
+    .section-image{
+        margin-bottom: 40vh;
+    }
+
+    .section-image-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: "Noto Serif";
+        color: #fff;
+        margin-top: -50vh;
+        margin-left: 3vw;
+    }
+
+    .section-image-description{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-left: 3vw;
+        margin-top: 3vh;
+    }
+
+
+    .orange-circle-special1{
+        left: 11vw;
+        top: -4vh;
+    }
+
+    .orange-circle-special1::after{
+        left: 3vw;
+        top: 4.5vh;
+    }
+
+    .p-title-special{
+        font-size: 2.5rem;
+    }
+
+    .testimony-of-clients-section{
+
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        margin-bottom: 15vh;
+    }
+
+    .div-fifth-section-description-img{
+
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .div-fifth-section-description-p-name{
+        font-size: 2rem;
+
+    }
+
+    .div-fifth-section-description-p-description{
+        font-size: 2rem;
+        padding: 3vh;
+        margin: 4vw;
+        margin-top: 0;
+        margin-bottom: 5vh;
+    }
+
+    .div-fifth-section-description-div-circles--item{
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .active-item-quote{
+        width: 2.9vw;
+        height: 2.9vw;
+    }
+
+    .icones-footer{
+        width: 4.5vw;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .btn-login-footer{
+        width: 12vw;
+    }
 }
