@@ -472,6 +472,7 @@ body{
     height: 5vh;
     padding-left: 3vh;
     border: 0.3vh solid #A89E9E;
+    font-size: 1.5rem;
 }
 
 .newsletter-session-input[type="text"]
@@ -480,7 +481,7 @@ body{
 }
 
 ::placeholder{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #000;
 }
 
@@ -504,6 +505,10 @@ body{
 .newsletter-session--btn-send:hover{
     background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
     font-weight: bold;
+}
+
+.newsletter-session-input:focus{
+    outline-color: #F50679;    
 }
 
 .orange-circle-special{

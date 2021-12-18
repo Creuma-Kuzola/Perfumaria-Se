@@ -62,7 +62,12 @@
     color: #3E3A3A;
 }
 
-.input-style:focus {
+.input-style:hover,.input-style:active {
+    border-bottom: 0.4vh solid #F50679;
+
+}
+
+.input-style:focus{
     outline: none;
 }
 

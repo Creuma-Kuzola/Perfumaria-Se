@@ -16,19 +16,23 @@
             <img class="left-div-img" src="/img/lucas-mendes-CyfmSpqNMD8-unsplash.jpg" alt="" srcset="">
         </div>
         
-        <form action="" method="post" class="right-div"> 
+        <form method="post" class="right-div"> 
             <p class="p-tittle">Criar conta</p>  <br><br><br><br><br>
-            <input type="text" name="nome" class="input-style input-1" placeholder="Nome do usuário" required>
+            <input type="text" name="nome" id="nome" class="input-style input-1" placeholder="Nome do usuário" required>
             <br><br><br><br>
-            <input type="password" name="email" id="" placeholder="Email" class="input-style input-2" required><br><br><br><br>
-            <input type="password" name="pass1" id="" placeholder="Palavra-passe" class="input-style input-3" required><br><br><br><br>
-            <input type="password" name="pass2" id="" placeholder="Confirmar a palavra-passe" class="input-style input-4" required><br><br>
+            <input type="email" name="email" id="email" placeholder="Email" class="input-style input-2" required><br><br><br><br>
+            <input type="password" name="pass1" id="pass1" placeholder="Palavra-passe" class="input-style input-3" required minlength="5"><br><br><br><br>
+            <input type="password" name="pass2" id="pass2" placeholder="Confirmar a palavra-passe" class="input-style input-4" required minlength="5"><br><br>
             <a class="link-esqueceu" href="#"><p class="p-esqueceu">Esqueceu a palavra-passe?</p><br><br></a> 
-           <button type="submit" class="btn-login">Login</button><br><br>
+           <button type="submit" class="btn-login" id="btn-login">Login</button><br><br>
             <p class="p-ainda">Já tem uma conta?<a href="login.html" class="link-ainda"><b> Faça Login!</b></p> </a> 
         </form>
              
     </section>
+
+    <script src="/js/cadastro.js">
+    
+    </script>
 
 </body>
 </html>
