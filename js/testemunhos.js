@@ -3,35 +3,35 @@ const quotes = [
     {
         img: '20201031_140502~2.jpg',
         name: 'Creuma Matias',
-        quote: 'Escolher LIG  como a minha escola de condução foi a melhor escolha, e hoje tenho a minha habilitação na mão'
+        quote: 'Tem um conceito completamente diferente das perfumarias convencionais e creio que seja por isso que tem se destacado e cumprido com o seu propósito'
     },
     {
         img: 'tahiti-spears-Me-MSv_dUNU-unsplash.jpg',
         name: 'Ana Emanuela',
-        quote: 'Uma escola excelente em todos os sentidos, desde as condições de ensino até aos entusiasmados funcionários. Recomendo '
+        quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo! '
     },
     
     {
         img: 'logan-weaver-yRpe13BHdKw-unsplash.jpg',
         name: 'Suzete Lukeny',
-        quote: 'Eu gostei tanto de estudar na LIG porque os meus professores eram super pacientes e profissionais.'
+        quote: 'Eu gostei tanto de estudar fazer comprar na Sê porque os funcionarários eram super pacientes e profissionais. E queriam que eu escolhesse exatamente o perfume de que realmente gosto'
     },
     {
         img: 'pexels-vinicius-wiesehofer-1130626.jpg',
         name: 'Rosied Delgado',
-        quote: 'Uma escola excelente em todos os sentidos, desde as condições de ensino até aos entusiasmados funcionários. Recomendo '
+        quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo! '
     },
     
     {
         img: 'etty-fidele-J1jYLLlRpA4-unsplash.jpg',
         name: 'Catarina Lisica',
-        quote: 'Eu gostei tanto de estudar na LIG porque os meus professores eram super pacientes e profissionais.'
+        quote: 'Tem um conceito completamente diferente das perfumarias convencionais e creio que seja por isso que tem se destacado e cumprido com o seu propósito'
     },
     
     {
         img: 'gabrielle-henderson-DgCPTkDqhHg-unsplash.jpg',
         name: 'Maria Pedro',
-        quote: 'Eu gostei tanto de estudar na LIG porque os meus professores eram super pacientes e profissionais.'
+        quote: 'Eu gostei tanto de estudar fazer comprar na Sê porque os funcionarários eram super pacientes e profissionais. E queriam que eu escolhesse exatamente o perfume de que realmente gosto'
     }
 ]
 
