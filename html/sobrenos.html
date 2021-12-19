@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize/normalize.css">
     <link rel="stylesheet" href="/css/sobrenos.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -18,7 +23,23 @@
                 <a class="ul-menu-a" href="/html/produtos.html">Produtos</a>
                 <a class="ul-menu-a" href="/html/testemunhosdosclientes.html">Testemunhos das clientes</a>
                 <a class="ul-menu-a" href="#">Sobre nós</a>
-                <button class="btn-login"><a class="ul-menu-a" href="/html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+                <button class="btn-login"><a class="ul-menu-a" href="/html/login.html" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
+            </ul>
+        </nav>
+
+        <i class="fas fa-bars hamburguer-menu-icon"></i>
+        <nav class="menu-nav mobile-menu">
+            <div class="mobile-menu-hidder"></div>
+            <ul class="ul-menu">
+                <i class="fas fa-times close-menu-button"></i>
+
+                <a class="ul-menu-a" href="../index.html">Home</a>
+                <a class="ul-menu-a" href="./produtos.html">Produtos</a>
+                <a class="ul-menu-a" href="./testemunhosdosclientes.html">Testemunhos dos clientes</a>
+                <a class="ul-menu-a" href="#">Sobre nós</a>
+                <button class="btn-login"><a class="ul-menu-a" href="html/login.html" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
             </ul>
         </nav>
     </header>
@@ -28,6 +49,8 @@
         <p class="section-image-title">“Juntas lutaremos para que você seja, quem você sempre quis ser ”</p>
     </section>
 
+    <script src="../js/menuController.js"></script>
 
 </body>
+
 </html>

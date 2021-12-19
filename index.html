@@ -8,14 +8,30 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/universal.css">
     <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css">
     <title>Home</title>
 </head>
 <body>
     
     <header class="header">
             <p class="paragraph-se">Sê!</p>
+
             <nav class="menu-nav">
                 <ul class="ul-menu">
+                    <a class="ul-menu-a" href="#">Home</a>
+                    <a class="ul-menu-a" href="/html/produtos.html">Produtos</a>
+                    <a class="ul-menu-a" href="/html/testemunhosdosclientes.html">Testemunhos dos clientes</a>
+                    <a class="ul-menu-a" href="/html/sobrenos.html">Sobre nós</a>
+                    <button class="btn-login"><a class="ul-menu-a" href="html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+                </ul>
+            </nav>
+
+            <i class="fas fa-bars hamburguer-menu-icon"></i>
+            <nav class="menu-nav mobile-menu">
+                <div class="mobile-menu-hidder"></div>
+                <ul class="ul-menu">
+                    <i class="fas fa-times close-menu-button"></i>
+
                     <a class="ul-menu-a" href="#">Home</a>
                     <a class="ul-menu-a" href="/html/produtos.html">Produtos</a>
                     <a class="ul-menu-a" href="/html/testemunhosdosclientes.html">Testemunhos dos clientes</a>
@@ -194,6 +210,6 @@
 
     <script src="/js/index.js"></script>
     <script src="/js/validationindex.js"></script>
-
+    <script src="js/menuController.js"></script>
 </body>
 </html>

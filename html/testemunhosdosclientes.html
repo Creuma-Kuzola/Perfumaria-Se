@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize/normalize.css">
     <link rel="stylesheet" href="/css/testemunhosdosclientes.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+
     <title>Testemunhos das clientes</title>
 </head>
+
 <body>
     <header class="header">
         <p class="paragraph-se">Sê!</p>
@@ -17,28 +22,45 @@
                 <a class="ul-menu-a" href="/html/produtos.html">Produtos</a>
                 <a class="ul-menu-a" href="#">Testemunhos das clientes</a>
                 <a class="ul-menu-a" href="/html/sobrenos.html">Sobre nós</a>
-                <button class="btn-login"><a class="ul-menu-a" href="/html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+                <button class="btn-login"><a class="ul-menu-a" href="/html/login.html" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
+            </ul>
+        </nav>
+
+        <i class="fas fa-bars hamburguer-menu-icon"></i>
+        <nav class="menu-nav mobile-menu">
+            <div class="mobile-menu-hidder"></div>
+            <ul class="ul-menu">
+                <i class="fas fa-times close-menu-button"></i>
+
+                <a class="ul-menu-a" href="../index.html">Home</a>
+                <a class="ul-menu-a" href="./produtos.html">Produtos</a>
+                <a class="ul-menu-a" href="#">Testemunhos dos clientes</a>
+                <a class="ul-menu-a" href="./sobrenos.html">Sobre nós</a>
+                <button class="btn-login"><a class="ul-menu-a" href="html/login.html" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
             </ul>
         </nav>
     </header>
 
     <section class="section-image">
         <img class="section-image-img" src="/img/perfume-wallpaper-hd-2560x1440-301976 1(1).png" alt="" srcset="">
-        <p class="section-image-title">Veja o  <br> testemunho das nossas clientes</p>
-        <p class="section-image-description">A Sê é mais do que um perfume, tem um propósito de ajudar-te 
+        <p class="section-image-title">Veja o <br> testemunho das nossas clientes</p>
+        <p class="section-image-description">A Sê é mais do que um perfume, tem um propósito de ajudar-te
             no teu <br> processo de auto-conhecimento. Leia o testemunho daquelas que com a <br> nossa ajuda conseguiram
-             se auto-descobrir.</p>
+            se auto-descobrir.</p>
     </section>
 
     <section class="second-section">
         <p class="p-title-special">Testemunhos dos clientes</p>
         <div class="orange-circle-special1"></div>
-     </section>   
+    </section>
 
-     <section class="testimony-of-clients-section">
-        <img class ="div-fifth-section-description-img"  src="/img/20201031_140502~2.jpg" alt="">
-        <p class ="div-fifth-section-description-p-name">Creuma Matias</p>
-        <p class="div-fifth-section-description-p-description">Escolher a <span class="fifth-section-description-span">LIG</span>  como a minha escola de condução <br>
+    <section class="testimony-of-clients-section">
+        <img class="div-fifth-section-description-img" src="/img/20201031_140502~2.jpg" alt="">
+        <p class="div-fifth-section-description-p-name">Creuma Matias</p>
+        <p class="div-fifth-section-description-p-description">Escolher a <span
+                class="fifth-section-description-span">LIG</span> como a minha escola de condução <br>
             foi a melhor escolha, e hj tenho a minha habilitação na mão.</p>
         <div class="div-fifth-section-description-div-circles">
             <div class="div-fifth-section-description-div-circles--item active-item-quote"></div>
@@ -47,10 +69,10 @@
             <div class="div-fifth-section-description-div-circles--item"></div>
             <div class="div-fifth-section-description-div-circles--item"></div>
             <div class="div-fifth-section-description-div-circles--item"></div>
-        </div> 
-     </section>
+        </div>
+    </section>
 
-     <footer class="footer">
+    <footer class="footer">
         <div class="div-icones-footer">
             <img class="icones-footer" src="/icones/Mask Group.png" alt="">
             <img class="icones-footer" src="/icones/Mask Group-1.png" alt="">
@@ -59,12 +81,15 @@
         <div class="last-div">
             <p class="p-se-footer">Sê!</p>
             <p class="p-todos-os">&copy; Todos os direitos reservados</p>
-            <button class="btn-login-footer"><a class="ul-menu-a" href="/html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+            <button class="btn-login-footer"><a class="ul-menu-a" href="/html/login.html" target="_blank"
+                    rel="noopener noreferrer">Login</a></button>
         </div>
     </footer>
 
 
-     <script src="/js/testemunhos.js"></script>
+    <script src="/js/testemunhos.js"></script>
+    <script src="/js/menuController.js"></script>
 
 </body>
+
 </html>
