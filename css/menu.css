@@ -1,0 +1,173 @@
+.header {
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  height: 10vh;
+  z-index: 999;
+  box-shadow: 1vw 0 0.5vw #c4c4c4;
+}
+
+.paragraph-se {
+  font-family: "Leckerli One";
+  font-size: 3rem;
+  margin-top: 2vh;
+  margin-left: 8vh;
+  background: linear-gradient(#F50679 0%, #ED811D);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ul-menu {
+  margin-top: -5.5vh;
+  margin-left: 45vw;
+}
+
+.ul-menu-a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  font-family: "Noto Serif";
+  padding-left: 2vw;
+  position: relative;
+}
+
+.ul-menu-a:hover {
+  font-weight: bold;
+}
+
+.ul-menu-a[href="#"] {
+  background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-family: "Noto Serif";
+}
+
+.ul-menu-a[href="#"]:hover {
+  background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+.ul-menu-a[href="#"]::after {
+  content: '';
+  position: absolute;
+  height: 0.7vh;
+  width: 77%;
+  background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+  left: 67%;
+  transform: translateX(-50%);
+  bottom: -0.5rem;
+  border-radius: 0.5vw;
+}
+
+.btn-login {
+  border: none;
+  color: #fff;
+  width: 6.5vw;
+  height: 5vh;
+  background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+  margin-left: 8.5vw;
+  border-radius: 0.5vh;
+  padding-right: -5vw;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+  font-weight: bold;
+}
+
+.ul-menu-a:last-child {
+  color: #fff;
+  padding-left: 0;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+}
+
+.mobile-menu {
+  display: none;
+}
+.hamburguer-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .hamburguer-menu-icon {
+    display: inline-block;
+    position: absolute;
+    font-size: 2.4rem;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #F50679;
+  }
+  .menu-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    background-color: #fff;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .mobile-menu-hidder {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: -20vw;
+    top: 0;
+    background-color: #2222226c;
+    z-index: 1;
+  }
+
+  .mobile-menu .ul-menu {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    height: 100vh;
+    width: 80vw;
+    background-color: #fff;
+    padding: 5rem 0;
+  }
+
+  .mobile-menu .ul-menu .close-menu-button {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 2.4rem;
+    color: #F50679
+  }
+
+  .mobile-menu .ul-menu-a {
+    margin: 0;
+    padding: 0;
+    margin: 1rem 0;
+    margin-left: 5%;
+    position: relative;
+  }
+
+  .ul-menu-a[href="#"]::after {
+    width: 100%;
+  }
+
+  .mobile-menu .btn-login {
+    margin: 0;
+    width: 90%;
+    align-self: center;
+  }
+}

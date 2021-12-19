@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize/normalize.css">
     <link rel="stylesheet" href="/css/sobrenos.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -18,7 +23,23 @@
                 <a class="ul-menu-a" href="/html/produtos.html">Produtos</a>
                 <a class="ul-menu-a" href="/html/testemunhosdosclientes.html">Testemunhos das clientes</a>
                 <a class="ul-menu-a" href="#">Sobre nós</a>
-                <button class="btn-login"><a class="ul-menu-a" href="/html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+                <button class="btn-login"><a class="ul-menu-a" href="/html/login.html" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
+            </ul>
+        </nav>
+
+        <i class="fas fa-bars hamburguer-menu-icon"></i>
+        <nav class="menu-nav mobile-menu">
+            <div class="mobile-menu-hidder"></div>
+            <ul class="ul-menu">
+                <i class="fas fa-times close-menu-button"></i>
+
+                <a class="ul-menu-a" href="../index.html">Home</a>
+                <a class="ul-menu-a" href="./produtos.html">Produtos</a>
+                <a class="ul-menu-a" href="./testemunhosdosclientes.html">Testemunhos dos clientes</a>
+                <a class="ul-menu-a" href="#">Sobre nós</a>
+                <button class="btn-login"><a class="ul-menu-a" href="html/login.html" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
             </ul>
         </nav>
     </header>
@@ -31,20 +52,20 @@
     <section class="second-section">
         <p class="p-title-special">Manifesto Sê</p>
         <div class="orange-circle-special1"></div>
-     </section>  
+    </section>
 
-     <section class="div-se">
-        <p class="p-se">" Sabemos a real dificuldade que as mulheres têm em se auto-descobrir. 
-            E mesmo depois de se auto-descobrirem, elas ainda têm <br> inseguranças sobre si 
-            mesmas e suas capacidades.  Daí nasceu a Sê que encoraja cada mulher a Ser quem ela realmente quer ser, 
-            associamos o processo  <br> de escolha de perfume ao processo de auto-conhecimento. 
+    <section class="div-se">
+        <p class="p-se">" Sabemos a real dificuldade que as mulheres têm em se auto-descobrir.
+            E mesmo depois de se auto-descobrirem, elas ainda têm <br> inseguranças sobre si
+            mesmas e suas capacidades. Daí nasceu a Sê que encoraja cada mulher a Ser quem ela realmente quer ser,
+            associamos o processo <br> de escolha de perfume ao processo de auto-conhecimento.
             A nossa meta não é vender perfumes, mas sim vender sentimentos, segurança, certeza e muita empatia."
-        </p>    
+        </p>
 
         <p class="p-se1">Sê, auto-conhecimento em forma de aroma!</p>
-     </section>
+    </section>
 
-     <footer class="footer">
+    <footer class="footer">
         <div class="div-icones-footer">
             <img class="icones-footer" src="/icones/Mask Group.png" alt="">
             <img class="icones-footer" src="/icones/Mask Group-1.png" alt="">
@@ -53,9 +74,13 @@
         <div class="last-div">
             <p class="p-se-footer">Sê!</p>
             <p class="p-todos-os">&copy; Todos os direitos reservados</p>
-            <button class="btn-login-footer"><a class="ul-menu-a" href="/html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+            <button class="btn-login-footer"><a class="ul-menu-a" href="/html/login.html" target="_blank"
+                    rel="noopener noreferrer">Login</a></button>
         </div>
     </footer>
+    <script src="../js/menuController.js"></script>
+
 
 </body>
+
 </html>
