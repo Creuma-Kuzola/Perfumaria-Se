@@ -37,7 +37,7 @@ const quotes = [
 
 
 let quoteIndex = 0;
-const basePictureUrl = '../img/'
+const basePictureUrl = '/static/./img/'
 const quoteCircles = document.querySelectorAll('.div-fifth-section-description-div-circles--item')
 setInterval(() => {
     quoteCircles[quoteIndex].classList.add('active-item-quote')
