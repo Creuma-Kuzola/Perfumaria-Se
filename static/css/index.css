@@ -1,0 +1,1193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto Serif Light";
+    src: url("../fonts/noto-serif/NotoSerif-Light.ttf");
+} 
+
+@font-face {
+    font-family: "Leckerli One";
+    src: url("../fonts/leckerli-one/LeckerliOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Source Sans Pro Light";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Light.ttf");
+}
+
+
+
+body{
+    overflow-x: hidden;
+    font-family:"Source Sans Pro";
+}
+
+
+.first-section{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+}
+
+.first-section-left{
+    margin-top: 40vh;
+    position: relative;
+    left: 6vw;
+    width: 60vw;
+}
+
+.first-section-left-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+}
+
+.first-section-left-conteudo{
+    font-size: 1.69rem;
+    margin-top: 1vh;
+}
+
+.btn-ver-produtos{
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 8.5vw;
+    height: 5.4vh;
+    font-size: 1.5rem;
+    border-radius: 0.5vh;
+    margin-top: 3vh;
+}
+
+.btn-ver-produtos-a{
+    text-decoration: none;
+}
+
+.btn-ver-produtos:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.first-section-right{
+    width: 40vw;
+}
+
+.first-section-right-img{
+    width: 30vw;
+    object-fit: cover;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.second-section{
+    margin-top: 12vh;
+}
+
+.orange-circle,.orange-circle-special, .orange-circle-special1{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 2.3rem;
+    background-color:#ED811D;
+    position: relative;
+    left: 39.5vw;
+    top: -5vh;
+}
+
+.orange-circle::after,.orange-circle-special::after,.orange-circle-special1::after{
+    content: ' ';
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 1.1rem;
+    background-color: #F50679;
+    position: absolute;
+    left: 1.5vw;
+    top: 3.8vh;
+}
+
+.p-title-special{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Noto Serif";
+    font-weight: bold;
+}
+
+.promotion-section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));
+    justify-items: center;
+    justify-content: center;
+    place-items: center;
+    gap:0 8rem;
+    margin: 4vw;
+    margin-top: 6vh;
+   
+}
+
+.promotion-section-item{
+    width: 30vw;
+    height: 60vh;
+}
+
+.promotion-section-item-img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.promotion-section-item-description{
+
+    margin-top: -1vh;
+    border: 0.5vh solid #c4c4c4;
+    border-top: 0;
+    background-color: #fff;
+    height: 18vh;
+    padding: 2vh;
+}
+
+.promotion-section-item-description--perfume-name{
+
+    font-size: 1.8rem;
+    font-family: "Noto Serif Light";
+}
+
+.promotion-section-item-description--perfume-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    padding-top: 1vh;
+}
+
+.promotion-section-item-description--btn-shop{
+
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 7vw;
+    height: 5.4vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 20.2vw;
+    cursor: pointer;
+}
+
+.promotion-section-item-description--btn-shop a{
+
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.promotion-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.news-section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));
+    justify-content: center;
+    justify-items: center;
+    place-items: center;
+    margin-top: 10vh;
+    gap: 4vw 0;
+}
+
+.news-section-item{
+    width: 40vw;
+    height: 66vh;
+}
+
+.item-1{
+    margin-left: 11vh;
+}
+
+.item-2{
+    margin-right: 11vh;
+}
+
+.news-section-item-img{
+    width: 40vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.news-section-item-description{
+    margin-top: -1vh;
+    border: 0.5vh solid #c4c4c4;
+    border-top: 0;
+    background-color: #fff;
+    height: 17vh;
+    padding: 2vh;
+}
+
+.news-section-item-description--perfume-name{
+
+    font-size: 1.8rem;
+    font-family: "Noto Serif Light";
+}
+
+.news-section-item-description--perfume-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    padding-top: 1vh;
+}
+
+.news-section-item-description--btn-shop{
+
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 7vw;
+    height: 5.4vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    margin-top: -1vh;
+    margin-left: 30.2vw;
+    cursor: pointer;
+}
+
+.news-section-item-description--btn-shop a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.news-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.image-section{
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+}
+
+.image-section-img{
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+.image-section-p{
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-top: -15vh;
+    text-align: center;
+    color: #fff;
+}
+
+.orange-circle-special1{
+    left: 30.5vw;
+}
+
+.testimony-of-clients-section{
+
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
+.div-fifth-section-description-img{
+
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border: 0.9vh solid #ED811D;
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.div-fifth-section-description-p-name{
+
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 4.5vh;
+}
+
+.div-fifth-section-description-p-description{
+    font-size: 1.2rem;
+    padding: 3vh;
+    text-align: center;
+    border: 0.2vw solid #eceaea;
+    border-radius: 0.3vw;
+    margin-bottom: 5vh;
+}
+
+.fifth-section-description-span{
+    font-family: "Source Sans Pro";
+}
+
+.div-fifth-section-description-div-circles{
+    display: flex;
+    margin-bottom: 2vh;
+    align-items: center;
+}
+
+.div-fifth-section-description-div-circles--item{
+
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 0.5vh solid #F50679;
+    margin: 0 0.25rem;
+}
+
+.active-item-quote{
+    width: 1.3vw;
+    height: 1.4vw;
+    background-color: #F50679;
+    border: none;
+}
+
+.newsletter-session{
+    width: 100vw;
+    height: 30vh;
+    background-color: rgba(196, 196, 196, 0.12);
+    margin-top: 5vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 3;
+    gap: 0 4vh;
+    grid-auto-flow: column;
+    justify-content:center;
+    margin-bottom: 15vh;
+}
+
+.newsletter-session-input{
+    width: 26vw;
+    height: 5vh;
+    padding-left: 3vh;
+    border: 0.3vh solid #A89E9E;
+    font-size: 1.5re;
+}
+
+.newsletter-session-input[type="text"]
+{
+    width: 26vw;
+}
+
+::placeholder{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.newsletter-session--btn-send{
+
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 6.5vw;
+    height: 5vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
+.newsletter-session--btn-send a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.newsletter-session--btn-send:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.newsletter-session-input:focus{
+
+    outline-color: #F50679;    
+}
+
+.orange-circle-special{
+    left: 37vw;
+}
+
+.footer{
+
+    background-color: #3E3A3A;
+    width: 100vw;
+    height: 25vh;
+    color: #fff;
+}
+
+.div-icones-footer{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    gap:0 3vh;
+    padding-top: 10vh;
+}
+
+.icones-footer{
+    width: 2.5vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.last-div{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+.p-se-footer{
+
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-left: 3vw;
+}
+
+.p-todos-os{
+    font-size: 1.69rem;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.btn-login-footer{
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5vh;
+    width: 6.5vw;
+    height: 5vh;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+.btn-login-footer:hover{
+    background-color: #000;
+    font-weight: bold;
+}
+
+.btn-login-footer a{
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1200px){
+       
+    .ul-menu{
+        margin-top: -5.5vh;
+        margin-left: 38vw;
+    }
+
+    .ul-menu-a{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+        font-family: "Noto Serif";
+        padding-left: 2vw;
+        position: relative;
+    }
+
+    .ul-menu-a:hover{
+        font-weight: bold;
+    }
+
+    .ul-menu-a[href="#"]{
+        background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+        font-family: "Noto Serif";
+    }
+
+    .ul-menu-a[href="#"]:hover{
+        background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+    }
+
+    .ul-menu-a[href="#"]::after{
+        content:'';
+        position: absolute;
+        height: 0.7vh;
+        width: 77%;
+        background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+        left:67%;
+        transform: translateX(-50%);
+        bottom: -0.5rem;
+        border-radius: 0.5vw;
+    }
+
+    .btn-login{
+        border: none;
+        color:#fff;
+        width: 6.5vw;
+        height: 5vh;
+        background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+        margin-left: 8.5vw;
+        border-radius: 0.5vh;
+        padding-right: -5vw;
+        cursor: pointer;
+    }
+
+
+    .orange-circle{
+        left: 38vw;
+        top: -5.5vh;
+
+    }
+    .orange-circle-special{
+        left: 35.5vw;
+        top: -5.5vh;
+    }
+    
+    .orange-circle-special1{
+        left: 28vw;
+        top: -5.5vh;
+    }
+
+    .orange-circle::after{
+        left: 3vh;
+        top: 4.3vh;
+    }
+
+    .orange-circle-special::after{
+        left: 3vh;
+        top: 4.5vh;
+    }
+   .orange-circle-special1::after{
+        left: 3vh;
+        top: 4.5vh;
+   }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+.ul-menu{
+
+    margin-top: -5.5vh;
+    margin-left: 34vw;
+}
+
+.btn-login{
+    width: 7.5vw;
+    margin-left: 7vw;
+}
+
+.btn-ver-produtos{
+
+    width: 10vw;
+}
+
+.orange-circle,.orange-circle-special, .orange-circle-special1{
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 36.5vw;
+    top: -5.5vh;
+}
+
+.orange-circle::after,.orange-circle-special::after,.orange-circle-special1::after{
+    width: 1.3rem;
+    height: 1.3rem;
+    left: 1.5vw;
+    top: 4.7vh;
+}
+
+.promotion-section-item{
+    width: 40vw;
+}
+
+.promotion-section-item-img{
+    width: 40vw;
+}
+.p-title-special{
+    font-size: 3.5rem;
+}
+
+.news-section{
+    display: grid;
+   margin: 10vh;
+    margin-top: 10vh;
+    gap: 2rem 5rem;
+}
+
+.news-section-item{
+    width: 40vw;
+}
+
+.item-1{
+    margin-left: 0;
+}
+
+.item-2{
+    margin-right: 0;
+}
+
+.news-section-item-img{
+    width: 40vw;
+}
+
+.orange-circle-special{
+    left: 33.5vw;
+}
+
+.orange-circle-special1{
+    left: 24.5vw;
+}
+
+.div-fifth-section-description-p-description{
+    font-size: 1.4rem;
+    margin-bottom: 5vh;
+}
+
+.div-fifth-section-description-div-circles--item{
+
+    width: 1vw;
+    height: 1vw;
+}
+
+.div-fifth-section-description-p-name{
+    margin-bottom: 7vh;
+}
+
+.active-item-quote{
+    width: 1.4vw;
+    height: 1.4vw;
+}
+
+.image-section-p{
+    font-size: 2.6rem;
+    margin-top: -10vh;
+}
+
+}
+
+@media screen  and (max-width:900px){
+    
+    .first-section-left{
+        margin-top: 40vh;
+        position: relative;
+        left: 6vw;
+        width: 60vw; 
+    }
+
+    .first-section-left-title{
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: "Noto Serif";
+    }
+
+    .first-section-left-conteudo{
+        font-size: 1.5rem;
+        margin-top: 1vh;
+    }
+
+    .btn-ver-produtos{
+        border: none;
+        color: #fff;
+        background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+        width: 12vw;
+        height: 5.4vh;
+        font-size: 1.5rem;
+        border-radius: 0.5vh;
+        margin-top: 3vh;
+    }
+
+    .first-section-right{
+        width: 40vw;
+    }
+
+    .first-section-right-img{
+        width: 40vw;
+        margin-left: -1vw;
+    }
+
+    .orange-circle{
+        left: 34.5vw;
+    }
+
+    .orange-circle-special{
+        left: 30.5vw;
+    }
+    
+    .orange-circle-special1{
+        left: 20vw;
+    }
+
+    .orange-circle::after{
+        left: 3vh;
+    }
+
+    .orange-circle-special::after{
+        left: 3vh;
+
+    }
+   .orange-circle-special1::after{
+    left: 3vh;
+   }
+
+    .promotion-section-item-description--btn-shop{
+        width: 10vw;
+        margin-left: 26vw;
+        cursor: pointer;
+    }
+
+    .news-section-item-description--btn-shop{
+        width: 10vw;
+        margin-left: 25vw;
+    }
+
+    .image-section-p{
+        font-family: "Leckerli One";
+        font-size: 2.3rem;
+        margin-top: -15vh;
+        text-align: center;
+        color: #fff;
+    }
+
+    .div-fifth-section-description-img{
+
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        border: 0.9vh solid #ED811D;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+    }
+
+    .div-fifth-section-description-div-circles--item{
+
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .active-item-quote{
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    .newsletter-session--btn-send{
+        width: 10vw;
+        font-size: 1.4rem;
+    }
+
+    ::placeholder{
+        font-size: 1.4rem;
+        color: #000;
+    }
+
+    .newsletter-session-input[type="text"]
+    {
+        width: 32vw;
+    }
+
+    .newsletter-session-input{
+        width: 32vw;
+        font-size: 1.5rem;
+    }
+
+    .icones-footer{
+        width: 3.5vw;
+    }
+
+    .btn-login-footer{
+        width: 10vw;
+    }
+
+}
+@media screen and (max-width:800px) {
+    
+    .orange-circle{
+        left: 31vw;
+    }
+
+    .orange-circle-special{
+        left: 30.5vw;
+    }
+    
+    .orange-circle-special1{
+        left: 20vw;
+    }
+
+    .orange-circle::after{
+        left: 3vh;
+    }
+
+    .orange-circle-special::after{
+        left: 3vh;
+
+    }
+   .orange-circle-special1::after{
+    left: 3vh;
+   }
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .ul-menu{
+        margin-top: -5.5vh;
+        margin-left: 20vw;
+    }
+    
+    .btn-login{
+        width: 7.5vw;
+        margin-left: 7vw;
+    }
+    
+    .btn-ver-produtos{
+    
+        width: 10vw;
+    }
+        
+    .first-section{
+        display: grid;
+        grid-template-columns: 2;
+        grid-auto-flow: column;
+    }
+
+    .first-section-left{
+        margin-top: 30vh;
+        position: relative;
+        left: 6vw;
+        width: 60vw;
+    }
+
+    .first-section-left-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: "Noto Serif";
+    }
+
+    .first-section-left-conteudo{
+        font-size: 1.35rem;
+        margin-top: 2vh;
+    }
+
+    .btn-ver-produtos{
+        width: 15vw;
+        font-size: 1.35rem;
+    }
+
+    .first-section-right{
+        width: 40vw;
+    }
+
+    .first-section-right-img{
+        width: 40vw;
+        object-fit: cover;
+        margin-left: -2vw;
+        margin-top: 10vh;
+    }
+
+    .orange-circle,.orange-circle-special, .orange-circle-special1{
+        width: 2.3rem;
+        height: 2.3rem;
+        left: 32.5vw;
+        top: -4.7vh;
+    }
+    
+    .orange-circle::after,.orange-circle-special::after,.orange-circle-special1::after{
+        width: 1.1rem;
+        height: 1.1rem;
+        left: 2vw;
+        top: 4.5vh;
+    }
+
+    .orange-circle-special{
+        left: 29vw;
+        
+    }
+    
+    .orange-circle-special1{
+        left: 18vw;
+    }
+        
+    .p-title-special{
+        text-align: center;
+        font-size: 3rem;
+        font-family: "Noto Serif";
+        font-weight: bold;
+    }
+
+    .promotion-section-item{
+        width: 60vw;
+    }
+
+    .promotion-section-item-img{
+        width: 60vw;
+    }
+
+    .promotion-section-item-description--btn-shop{
+        width: 10vw;
+        margin-left: 44vw;
+        font-size: 1.4rem;
+    }
+
+    .news-section-item-description--btn-shop{
+        width: 10vw;
+        font-size: 1.4rem;
+        margin-left: 54vw;
+    }
+
+    .image-section-p{
+        font-size: 2.3rem;
+        margin-top: -19vh;
+    }
+
+    .div-fifth-section-description-img{
+
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        border: 0.9vh solid #ED811D;
+        border-radius: 50%;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+    }
+
+    .div-fifth-section-description-p-name{
+
+        font-size: 2rem;
+    }
+
+    .div-fifth-section-description-p-description{
+        font-size: 1.4rem;
+        padding: 3vh;
+        text-align: center;
+        border: 0.2vw solid #eceaea;
+        border-radius: 0.3vw;
+        margin: 4vw;
+        margin-bottom: 2vh;
+    }
+
+    .div-fifth-section-description-div-circles--item{
+
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .active-item-quote{
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    ::placeholder{
+        font-size: 1.4rem;
+        color: #000;
+    }
+
+    .newsletter-session--btn-send{
+        width: 10vw;
+        font-size: 1.4rem;
+    }
+
+    .icones-footer{
+        width: 3.5vw;
+    }
+
+    .btn-login-footer{
+        width: 10vw;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .ul-menu{
+        margin-top: -5.5vh;
+        margin-left: 20vw;
+    }
+    
+    .btn-login{
+        width: 7.5vw;
+        margin-left: 7vw;
+    }
+    
+
+.first-section{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+}
+
+.first-section-left{
+    margin-top: 22vh;
+    position: relative;
+    left: 6vw;
+    width: 60vw;
+}
+
+.first-section-left-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+}
+
+.first-section-left-conteudo{
+    font-size: 1.4rem;
+    margin-top: 1vh;
+}
+
+.btn-ver-produtos{
+    width: 18vw;
+    font-size: 1.35rem;
+}
+
+.first-section-right{
+    width: 40vw;
+}
+
+.first-section-right-img{
+    width: 50vw;
+    object-fit: cover;
+    margin-left: -10vw;
+    margin-top: 10vh;
+}
+
+    .orange-circle,.orange-circle-special, .orange-circle-special1{
+        width: 2.3rem;
+        height: 2.3rem;
+        left: 25vw;
+        top: -4.7vh;
+    }
+    
+    .orange-circle::after,.orange-circle-special::after,.orange-circle-special1::after{
+        width: 1.1rem;
+        height: 1.1rem;
+        left: 2.5vw;
+        top: 4.8vh;
+    }
+
+    .orange-circle-special{
+        left: 22vw;
+        
+    }
+    
+    .orange-circle-special1{
+        left: 14vw;
+    }
+    
+    
+.p-title-special{
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Noto Serif";
+    font-weight: bold;
+}
+
+.promotion-section-item{
+    width: 60vw;
+}
+
+.promotion-section-item-img{
+    width: 60vw;
+}
+
+.promotion-section-item-description--btn-shop{
+    width: 14vw;
+    margin-left: 38vw;
+    font-size: 1.4rem;
+}
+
+
+.news-section-item-description--btn-shop{
+    width: 14vw;
+    font-size: 1.4rem;
+    margin-left: 48vw;
+}
+
+
+.image-section-p{
+    font-size: 2rem;
+    margin-top: -19vh;
+}
+
+
+.div-fifth-section-description-img{
+
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    border: 0.9vh solid #ED811D;
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.div-fifth-section-description-p-name{
+
+    font-size: 2rem;
+}
+
+.div-fifth-section-description-p-description{
+    font-size: 1.4rem;
+    padding: 3vh;
+    text-align: center;
+    border: 0.2vw solid #eceaea;
+    border-radius: 0.3vw;
+    margin: 4vw;
+    margin-bottom: 2vh;
+}
+
+
+.div-fifth-section-description-div-circles--item{
+
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.active-item-quote{
+    width: 2.3vw;
+    height: 2.3vw;
+   
+}
+
+::placeholder{
+    font-size: 1.4rem;
+    color: #000;
+}
+
+
+.newsletter-session--btn-send{
+
+    width: 10vw;
+    font-size: 1.4rem;
+}
+
+
+.icones-footer{
+    width: 3.5vw;
+}
+
+.btn-login-footer{
+    width: 10vw;
+}
+
+}
