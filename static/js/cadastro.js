@@ -7,12 +7,27 @@ function validar(e) {
 
     if (nome == "" || nome == null) {
         alert("Erro o nome está vazio");
-    }  
-    
-    if(pass1 !== pass2){
+    }
+
+    if (pass1 !== pass2) {
         alert("Erro as palavra-passes são diferentes");
     }
 }
 
 var btncadastrar = document.getElementById("btn-login");
-btncadastrar.addEventListener("click", validar);
+
+$('#btn-login').click(function(e) {
+    validar(e)
+    $.ajax({
+        url: 'http://localhost:5000/cadastro',
+        type: 'post',
+        dataType: 'json',
+        data: $('#form-cadastro').serialize(),
+        success: function(data) {
+            window.location.pathname = '/login'
+        },
+        complete: function() {
+            window.location.pathname = '/login'
+        }
+    });
+});

@@ -7,15 +7,14 @@ from blueprint.login import login as loginBlueprint
 from blueprint.cadastro import cadastro as cadastroBlueprint
 from conexao import start_connection_db, close_connection_db
 
-cursor, conexao = start_connection_db()
-cursor.execute(f'INSERT INTO newsletter(nome, email) VALUES(%s, %s)', ('Creuma', 'cxxxx@gmail.com',))
-conexao.commit()
-close_connection_db(cursor,conexao)
+#cursor, conexao = start_connection_db()
+#cursor.execute(f'INSERT INTO newsletter(nome, email) VALUES(%s, %s)', ('Creuma', 'cxxxx@gmail.com',))
+#conexao.commit()
+#close_connection_db(cursor,conexao)
 
 app = Flask(__name__ , template_folder='templates')
 app.register_blueprint(testemunhosdosclientesBlueprint,url_prefix='/testemunhosdosclientes')
 app.register_blueprint(indexBlueprint, url_prefix='/')
-app.register_blueprint(indexBlueprint, url_prefix='/home')
 app.register_blueprint(produtosBlueprint, url_prefix='/produtos')
 app.register_blueprint(sobrenosBlueprint, url_prefix='/sobrenos')
 app.register_blueprint(loginBlueprint, url_prefix='/login')
