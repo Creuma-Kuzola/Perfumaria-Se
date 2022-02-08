@@ -20,10 +20,4 @@ def cadastrar():
          cursor.execute(f'INSERT INTO usuario(nome_usuario,email,palavra_passe) VALUES(%s, %s, %s)', (nome,email,pass1))
          conexao.commit()
          close_connection_db(cursor,conexao)
-
          return render_template('login.html')
-
-
-
-
-#@cadastro.route()

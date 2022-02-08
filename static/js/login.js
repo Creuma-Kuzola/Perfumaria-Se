@@ -12,16 +12,6 @@ function validar(e) {
         alert("Erro: a password está errada")
     }
 
-    if (nome != null && nome != "") {
-        if (password != null && password != "") {
-            if (nome == "Creuma Kuzola" && password == "1234") {
-                alert("Seja bem vinda: " + nome)
-            } else {
-                alert("Erro: Este usuário não está cadastrado")
-            }
-        }
-    }
-
 }
 
 var btnLogin = document.getElementById("btn-login")
@@ -29,15 +19,15 @@ var btnLogin = document.getElementById("btn-login")
 $('#btn-login').click(function(e) {
     validar(e)
     $.ajax({
-        url: 'http://localhost:5000/cadastro',
+        url: 'http://localhost:5000/login',
         type: 'post',
         dataType: 'json',
-        data: $('#form-cadastro').serialize(),
+        data: $('#form-login').serialize(),
         success: function(data) {
-            window.location.pathname = '/login'
+            window.location.pathname = '/'
         },
         complete: function() {
-            window.location.pathname = '/login'
+            window.location.pathname = '/'
         }
     });
 });
