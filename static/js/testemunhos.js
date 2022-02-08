@@ -1,6 +1,4 @@
-const quotes = [ 
-    
-    {
+const quotes = [{
         img: '20201031_140502~2.jpg',
         name: 'Creuma Matias',
         quote: 'Tem um conceito completamente diferente das perfumarias convencionais e creio que seja por isso que tem se destacado e cumprido com o seu propósito'
@@ -10,7 +8,7 @@ const quotes = [
         name: 'Ana Emanuela',
         quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo! '
     },
-    
+
     {
         img: 'logan-weaver-yRpe13BHdKw-unsplash.jpg',
         name: 'Suzete Lukeny',
@@ -21,13 +19,13 @@ const quotes = [
         name: 'Rosied Delgado',
         quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo! '
     },
-    
+
     {
         img: 'etty-fidele-J1jYLLlRpA4-unsplash.jpg',
         name: 'Catarina Lisica',
         quote: 'Tem um conceito completamente diferente das perfumarias convencionais e creio que seja por isso que tem se destacado e cumprido com o seu propósito'
     },
-    
+
     {
         img: 'gabrielle-henderson-DgCPTkDqhHg-unsplash.jpg',
         name: 'Maria Pedro',
@@ -44,15 +42,13 @@ setInterval(() => {
     console.log(quotes[quoteIndex])
     renderQuote(quotes[quoteIndex])
 
-    if(quoteIndex==0) {
+    if (quoteIndex == 0) {
         quoteCircles[5].classList.remove('active-item-quote')
-    }
-    else if(quoteIndex!=0)
-    {
-        quoteCircles[quoteIndex-1].classList.remove('active-item-quote')
+    } else if (quoteIndex != 0) {
+        quoteCircles[quoteIndex - 1].classList.remove('active-item-quote')
     }
 
-    if(quoteIndex == 5){
+    if (quoteIndex == 5) {
         quoteIndex = 0;
     } else {
         quoteIndex++;
@@ -60,10 +56,10 @@ setInterval(() => {
 
 }, 3000)
 
-function renderQuote(quote){
+function renderQuote(quote) {
 
     imagem = document.querySelector('.div-fifth-section-description-img')
-    imagem.src =`${basePictureUrl}${quote.img}`
+    imagem.src = `${basePictureUrl}${quote.img}`
 
     document.querySelector('.div-fifth-section-description-p-name').innerText = quote.name
     document.querySelector('.div-fifth-section-description-p-description').innerText = quote.quote

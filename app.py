@@ -5,6 +5,12 @@ from blueprint.produtos import produtos as produtosBlueprint
 from blueprint.sobrenos import sobrenos as sobrenosBlueprint
 from blueprint.login import login as loginBlueprint
 from blueprint.cadastro import cadastro as cadastroBlueprint
+from conexao import start_connection_db, close_connection_db
+
+cursor, conexao = start_connection_db()
+cursor.execute(f'INSERT INTO newsletter(nome, email) VALUES(%s, %s)', ('Creuma', 'cxxxx@gmail.com',))
+conexao.commit()
+close_connection_db(cursor,conexao)
 
 app = Flask(__name__ , template_folder='templates')
 app.register_blueprint(testemunhosdosclientesBlueprint,url_prefix='/testemunhosdosclientes')
