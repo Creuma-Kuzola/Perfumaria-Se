@@ -12,13 +12,14 @@ def logins():
         nome = request.form['nome']
         palavra_passe = request.form['pass']
         print('Dados login',nome,palavra_passe)
+        
         cursor, conexao = start_connection_db()
-        cursor.execute(f'SELECT nome_usuario, palavra_passe FROM usuario WHERE nome_usuario = %s and palavra_passe =%s',(nome,palavra_passe))
+        cursor.execute(f'SELECT id_usuario,nome_usuario, palavra_passe FROM usuario WHERE nome_usuario = %s and palavra_passe =%s',(nome,palavra_passe))
         usuario = cursor.fetchone()
         close_connection_db(cursor,conexao)
 
         if usuario != None:
-            return render_template('index.html')
+            return render_template('index.html',usuario=usuario)
         return "<h1>Bla bla bla</h1>"    
        
         

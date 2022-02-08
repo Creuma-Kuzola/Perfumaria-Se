@@ -14,8 +14,9 @@
 </head>
 
 <body>
+
     <header class="header">
-            <p class="paragraph-se">Sê!</p>
+        <p class="paragraph-se">Sê!</p>
         <nav class="menu-nav">
             <ul class="ul-menu">
                 <a class="ul-menu-a" href="#">Home</a>
@@ -23,23 +24,23 @@
                 <a class="ul-menu-a" href="/testemunhosdosclientes">Testemunhos dos clientes</a>
                 <a class="ul-menu-a" href="/sobrenos">Sobre nós</a>
                 <button class="btn-login"><a class="ul-menu-a" href="/login" target="_blank" rel="noopener noreferrer">Login</a></button>
-                >
-           <v>
+            </ul>
+        </nav>
 
-            <i class="fas fa-bars hamburguer-menu-icon"></i>
+        <i class="fas fa-bars hamburguer-menu-icon"></i>
         <nav class="menu-nav mobile-menu">
             <div class="mobile-menu-hidder"></div>
             <ul class="ul-menu">
                 <i class="fas fa-times close-menu-button"></i>
 
-                    <a class="ul-menu-a" href="#">Home</a>
+                <a class="ul-menu-a" href="#">Home</a>
                 <a class="ul-menu-a" href="/produtos">Produtos</a>
                 <a class="ul-menu-a" href="/testemunhosdosclientes">Testemunhos dos clientes</a>
                 <a class="ul-menu-a" href="/sobrenos">Sobre nós</a>
                 <button class="btn-login"><a class="ul-menu-a" href="/login" target="_blank" rel="noopener noreferrer">Login</a></button>
             </ul>
-            v>
-   </hea>
+        </nav>
+    </header>
 
     <section class="first-section">
         <section class="first-section-left">
@@ -55,147 +56,99 @@
     <section class="second-section">
         <p class="p-title-special">Promoções</p>
         <div class="orange-circle"></div>
-     </section>   
+    </section>
 
     <section class="promotion-section">
-         <div class="promotion-section-item">
-               <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/laura-chouette-2H_8WbVPRxM-unsplash.jpg')}}" alt="" srcset="">
-              </v>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <btton class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-                v>
-           <v>
-
-            <div class="promotion-section-item">
+        {% for produto_promocao in promocao %}
+        <div class="promotion-section-item">
             <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/moa-kiraly-ituJ4nUF7Vk-unsplash.jpg')}}" alt="" srcset="">
+                <img class="promotion-section-item-img" src="{{ image_static_url + produto_promocao[4] }}" alt="" srcset="">
             </div>
             <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <btton class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-              </v> 
-         </dv>
-
-            <div class="promotion-section-item">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static', filename='./img/laura-chouette-8WlM9twbNJA-unsplash.jpg')}}" alt="" srcset="">
-                v>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <buton class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-             </dv> 
-         </dv>
- </sectin> 
+                <p class="promotion-section-item-description--perfume-name">{{produto_promocao[1]}}</p>
+                <p class="promotion-section-item-description--perfume-price">{{produto_promocao[5]}} kz</p>
+                <button class="promotion-section-item-description--btn-shop"><a href="/produto/compra/{{produto_promocao[0]}}">Comprar</a></button>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
 
     <section class="second-section">
         <p class="p-title-special">Novidades</p>
         <div class="orange-circle"></div>
-    </section>  
-         
+    </section>
 
-         <div class="news-section-item item-1">
+  
+    <section class="news-section">
+        {% for produto_novidades in novidades %}
+        <div class="news-section-item item-1">
             <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static', filename='./img/pexels-valeria-boltneva-1961792.jpg')}}" alt="" srcset="">
+                <img class="news-section-item-img" src="{{ image_static_url + produto_novidades[4] }}" alt="" srcset="">
             </div>
             <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="news-section-item-description--perfume-price">20.000 kz</p>
-                <buton class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div> 
+                <p class="news-section-item-description--perfume-name">{{produto_novidades[1]}}</p>
+                <p class="news-section-item-description--perfume-price">{{produto_novidades[5]}} kz</p>
+                <button class="news-section-item-description--btn-shop"><a href="/produto/compra/{{produto_novidades[0]}}">Comprar</a></button>
+            </div>
         </div>
+        {% endfor %}
+    </section>
 
-            <div class="news-section-item item-2">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/filip-baotic-tgqnnQfq6C8-unsplash.jpg')}}" alt="" srcset="">
-                v>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="news-section-item-description--perfume-price">20.000 kz</p>
-                <buton class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-             </dv> 
-         </dv>
-     </sction> 
-
-        <section class="second-section">
+    <section class="second-section">
         <p class="p-title-special">Mais vendidos</p>
         <div class="orange-circle-special"></div>
-        ection>   
-    
+    </section>
+
     <section class="promotion-section">
-         <div class="promotion-section-item">
-               <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/sara-saleh-cpisiUDKAqE-unsplash.jpg')}}" alt="" srcset="">
-              </v>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <btton class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-                v>
-           <v>
-
-            <div class="promotion-section-item">
+        {% for produto_mais_vendido in mais_vendidos %}
+        <div class="promotion-section-item">
             <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static', filename='./img/karly-jones-4i9ef6xU738-unsplash.jpg')}}" alt="" srcset="">
-             </dv>
+                <img class="promotion-section-item-img" src="{{ image_static_url + produto_mais_vendido[4]}}"alt="" srcset="">
+            </div>
             <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <buton class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-                v> 
-           <v>
-
-            <div class="promotion-section-item">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static', filename='./img/hans-vivek-nKhWFgcUtdk-unsplash.jpg')}}" alt="" srcset="">
-              </v>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p  class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <btton class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-                v> 
-            v>
-       <> 
+                <p class="promotion-section-item-description--perfume-name">{{produto_mais_vendido[1]}}</p>
+                <p class="promotion-section-item-description--perfume-price">{{produto_mais_vendido[5]}} kz</p>
+                <button class="promotion-section-item-description--btn-shop"><a href="/produto/compra/{{produto_mais_vendido[0]}}">Comprar</a></button>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
 
 
-       <section class="image-section">
-     <img class="image-section-img" src="{{url_for('static', filename='./img/Rectangle 107.png')}}" alt="" srcset="">
+    <section class="image-section">
+        <img class="image-section-img" src="{{url_for('static', filename='./img/Rectangle 107.png')}}" alt="" srcset="">
         <p class="image-section-p">“Escolha o aroma perfeito para você, escolha o aroma que te ajuda a ser.” </p>
-       </section>
+    </section>
 
-   <section class="second-section">
-         <p class="p-title-special">Testemunhos dos clientes</p>
+    <section class="second-section">
+        <p class="p-title-special">Testemunhos dos clientes</p>
         <div class="orange-circle-special1"></div>
-     </section>   
+    </section>
 
-     <section class="testimony-of-clients-section">
-       <img class ="div-fifth-section-description-img"  src="{{url_for('static', filename='./img/20201031_140502~2.jpg')}}" alt="">
-        <p class =div-fifth-section-description-p-name>Creuma Matias</p>
-        <p class"div-fifth-section-description-p-description">Escolher a <span class="fifth-section-description-span">LIG</span>  como a minha escola de condução <br>
-            foi a melhor escolha, e hj tenho a minha habilitação na mão.</p>v class="div-fifth-section-description-div-circles">
+    <section class="testimony-of-clients-section">
+        <img class="div-fifth-section-description-img" src="{{url_for('static', filename='./img/20201031_140502~2.jpg')}}" alt="">
+        <p class="div-fifth-section-description-p-name">Creuma Matias</p>
+        <p class="div-fifth-section-description-p-description">Escolher a <span class="fifth-section-description-span">LIG</span> como a minha escola de condução <br> foi a melhor escolha, e hj tenho a minha habilitação na mão.</p>
+        <div class="div-fifth-section-description-div-circles">
             <div class="div-fifth-section-description-div-circles--item active-item-quote"></div>
             <div class="div-fifth-section-description-div-circles--item"></div>
             <div class="div-fifth-section-description-div-circles--item"></div>
-        </div> 
-     </section
- 
-     <section class="second-section">
-     <p class="p-title-special">Newsletter</p>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <p class="p-title-special">Newsletter</p>
         <div class="orange-circle"></div>
-     </section> 
+    </section>
 
-     <form class="newsletter-session" method="post"> 
-       <input class="newsletter-session-input" type"text" id="nome" placeholder="Escreva o seu nome" required >
-        <input class="newsletter-session-input" type="email" id="email" placeholder="Escreva o seu melhor email  required>
+    <form class="newsletter-session" method="post">
+        <input class="newsletter-session-input" type="text" id="nome" placeholder="Escreva o seu nome" required>
+        <input class="newsletter-session-input" type="email" id="email" placeholder="Escreva o seu melhor email" required>
         <button class="newsletter-session--btn-send" type="submit" id="btn-send">Enviar</button>
-     </form>
+    </form>
 
-     <footer class="footer">
-       <div class="div-icones-footer">
+    <footer class="footer">
+        <div class="div-icones-footer">
             <img class="icones-footer" src="{{url_for('static',filename='./icones/Mask Group.png')}}" alt="">
             <img class="icones-footer" src="{{url_for('static',filename='./icones/Mask Group-1.png')}}" alt="">
             <img class="icones-footer" src="{{url_for('static',filename='./icones/Mask Group-2.png')}}" alt="">
@@ -210,7 +163,7 @@
     <script src="{{url_for('static',filename='./js/index.js')}}"></script>
     <script src="{{url_for('static',filename='./js/validationindex.js')}}"></script>
     <script src="{{url_for('static',filename='./js/menuController.js')}}"></script>
-    
-dy>
-</html>
 
+</body>
+
+</html>

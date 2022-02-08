@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/normalize/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/produtocompra.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/menu.css')}}" />
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+
+    <title>Produtos-Compra</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="paragraph-se">Sê!</p>
+        <nav class="menu-nav">
+            <ul class="ul-menu">
+                <a class="ul-menu-a" href="/">Home</a>
+                <a class="ul-menu-a" href="/produtos">Produtos</a>
+                <a class="ul-menu-a" href="/testemunhosdosclientes">Testemunhos dos clientes</a>
+                <a class="ul-menu-a" href="/sobrenos">Sobre nós</a>
+                <button class="btn-login"><a class="ul-menu-a" href="/login" target="_blank"
+                        rel="noopener noreferrer">Login</a></button>
+            </ul>
+        </nav>
+
+        <i class="fas fa-bars hamburguer-menu-icon"></i>
+        <nav class="menu-nav mobile-menu">
+            <div class="mobile-menu-hidder"></div>
+            <ul class="ul-menu">
+                <i class="fas fa-times close-menu-button"></i>
+                <a class="ul-menu-a" href="/">Home</a>
+                <a class="ul-menu-a" href="/produtos">Produtos</a>
+                <a class="ul-menu-a" href="/testemunhosdosclientes">Testemunhos dos clientes</a>
+                <a class="ul-menu-a" href="/sobrenos">Sobre nós</a>
+                <button class="btn-login"><a class="ul-menu-a" href="/login" target="_blank"
+                        rel="noopener noreferrer">Login</a>
+            </ul>
+        </nav>
+    </header>
+
+    <form method="post">
+        <section class="promotion-section">
+            <div class="promotion-section-item one-promotion">
+                <div class="promotion-section-item-div">
+                    <img class="promotion-section-item-img" src="{{image_static_url+produto[4]}}" alt="" srcset="">
+                </div>
+                <div class="promotion-section-item-description">
+                    <p class="promotion-section-item-description--perfume-name">{{produto[1]}}</p>
+                    <p class="promotion-section-item-description--perfume-price">{{produto[5]}} kz</p>
+                    <button class="promotion-section-item-description--btn-shop" type="submit" id="btn-comprar" name="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>    
+    </form>
+    
+    <script>
+        var nomeProducto = '{{ produto[1] }}';
+        var precoProducto = '{{ produto[5] }}';
+        var btnComprar = document.getElementById('btn-comprar')
+        btnComprar.addEventListener('click',salvar)
+        alert('Cara')
+
+        const salvar = (e) => {
+            alert('Cara1')
+            e.preventDefault()
+            fetch('http://localhost:5000/produto/compra/' + produto[0], {
+                method: 'POST',
+                body: JSON.stringify({
+                    nomeProducto,
+                    precoProducto
+                })
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log('Entrei'+data)
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+        }
+
+    </script>
+</body>
+
+</html>

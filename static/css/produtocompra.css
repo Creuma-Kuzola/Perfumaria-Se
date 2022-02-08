@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto Serif Light";
+    src: url("../fonts/noto-serif/NotoSerif-Light.ttf");
+} 
+
+@font-face {
+    font-family: "Leckerli One";
+    src: url("../fonts/leckerli-one/LeckerliOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Source Sans Pro Light";
+    src: url("../fonts/source-sans-pro/SourceSansPro-Light.ttf");
+}
+
+.header{
+    position: fixed;
+    background-color:#fff;
+    width: 100vw;
+    height: 10vh;
+    z-index: 999;
+    box-shadow:1vw 0 0.5vw #c4c4c4;
+    top: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family:"Source Sans Pro";
+}
+
+.paragraph-se{
+
+    font-family: "Leckerli One";
+    font-size: 3rem;
+    margin-top: 2vh;
+    margin-left: 8vh;
+    background: linear-gradient(#F50679 0%, #ED811D);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ul-menu{
+
+    margin-top: -5.5vh;
+    margin-left: 45vw;
+}
+
+.ul-menu-a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #000;
+    font-family: "Noto Serif";
+    padding-left: 2vw;
+    position: relative;
+    text-align: center;
+}
+
+.ul-menu-a:hover{
+    font-weight: bold;
+}
+
+.ul-menu-a[href="#"]{
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-family: "Noto Serif";
+}
+
+.ul-menu-a[href="#"]:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.ul-menu-a[href="#"]::after{
+    content:'';
+    position: absolute;
+    height: 0.7vh;
+    width: 84%;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    left:63%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+    border-radius: 0.5vw;
+}
+
+.btn-login{
+    border: none;
+    color:#fff;
+    width: 6.5vw;
+    height: 5vh;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    margin-left: 8.5vw;
+    border-radius: 0.5vh;
+    padding-right: -5vw;
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
+
+.ul-menu-a:last-child{
+    color: #fff;
+    padding-left: 0;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
+
+
+.promotion-section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));
+    justify-items: center;
+    justify-content: center;
+    place-items: center;
+    gap:4vw 8vw;
+    margin:14vh;
+    margin-top: 20vh;
+}
+
+.promotion-section-item{
+    width: 50vw;
+    height: 70vh;
+}
+
+.promotion-section-item-img{
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.promotion-section-item-description{
+    margin-top: -1vh;
+    border: 0.5vh solid #c4c4c4;
+    border-top: 0;
+    background-color: #fff;
+    height: 18vh;
+    padding: 2vh;
+}
+
+.promotion-section-item-description--perfume-name{
+    font-size: 1.8rem;
+    font-family: "Noto Serif Light";
+}
+
+.promotion-section-item-description--perfume-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif";
+    padding-top: 1vh;
+}
+
+.promotion-section-item-description--btn-shop{
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F50679 -4.96%, #ED811D 76.38%);
+    width: 7vw;
+    height: 5.4vh;
+    font-size: 1.55rem;
+    border-radius: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 40vw;
+    cursor: pointer;
+}
+
+.promotion-section-item-description--btn-shop a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.promotion-section-item-description--btn-shop:hover{
+    background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
+    font-weight: bold;
+}
