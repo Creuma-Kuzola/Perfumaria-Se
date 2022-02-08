@@ -25,8 +25,6 @@ function validar(e) {
 }
 
 var btnLogin = document.getElementById("btn-login")
-btnLogin.addEventListener("click", validar)
-
 
 $('#btn-login').click(function(e) {
     validar(e)
