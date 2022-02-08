@@ -54,76 +54,19 @@
     </section>
 
     <section class="promotion-section">
+        {% for produtos_promocao in promocao%}
         <div class="promotion-section-item one-promotion">
             <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/laura-chouette-2H_8WbVPRxM-unsplash.jpg')}}" alt=""
+                <img class="promotion-section-item-img" src="{{image_static_url+ produtos_promocao[4]}}" alt=""
                     srcset="">
             </div>
             <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
+                <p class="promotion-section-item-description--perfume-name">{{produtos_promocao[1]}}</p>
+                <p class="promotion-section-item-description--perfume-price">{{produtos_promocao[5]}} kz</p>
+                <button class="promotion-section-item-description--btn-shop"><a href="/produto/compra/{{produtos_promocao[0]}}">Comprar</a></button>
             </div>
         </div>
-
-        <div class="promotion-section-item two-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/moa-kiraly-ituJ4nUF7Vk-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="promotion-section-item three-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/laura-chouette-8WlM9twbNJA-unsplash.jpg')}}" alt=""
-                    srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="promotion-section-item four-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/laura-chouette-1nsqsv7MifM-unsplash.jpg')}}" alt=""
-                    srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="promotion-section-item five-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/perfume-background-hd-2560x1600-301979.jpg')}}" alt=""
-                    srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="promotion-section-item six-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/april-chen-NZAaeVR7MFw-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
+        {% endfor %}
     </section>
 
     <section class="second-section">
@@ -132,50 +75,18 @@
     </section>
 
     <section class="news-section">
+        {% for produtos_novidades in novidades%}
         <div class="news-section-item item-1">
             <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/pexels-valeria-boltneva-1961792.jpg')}}" alt="" srcset="">
+                <img class="news-section-item-img" src="{{image_static_url+ produtos_novidades[4]}}" alt="" srcset="">
             </div>
             <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
+                <p class="news-section-item-description--perfume-name">{{produtos_novidades[1]}}</p>
+                <p class="news-section-item-description--perfume-price">{{produtos_novidades[5]}} kz</p>
+                <button class="news-section-item-description--btn-shop"><a href="/produto/compra/{{produtos_novidades[0]}}">Comprar</a></button>
             </div>
         </div>
-
-        <div class="news-section-item item-2">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/filip-baotic-tgqnnQfq6C8-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="news-section-item item-1">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/laura-chouette-005mAZgn3ss-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="news-section-item item-2">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/camille-paralisan-LgoehzzFAMA-unsplash.jpg')}}" alt=""
-                    srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
+        {% endfor%}
     </section>
 
     <section class="second-section">
@@ -184,73 +95,19 @@
     </section>
 
     <section class="news-section">
+        {% for produtos_produtos in produto1%}
         <div class="news-section-item item-1">
             <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/jeroen-den-otter-2b0JeJTEclQ-unsplash.jpg')}}" alt=""
+                <img class="news-section-item-img" src="{{image_static_url+ produtos_produtos[4]}}" alt=""
                     srcset="">
             </div>
             <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
+                <p class="news-section-item-description--perfume-name">{{produtos_produtos[1]}}</p>
+                <p class="news-section-item-description--perfume-price">{{produtos_produtos[5]}}kz</p>
+                <button class="news-section-item-description--btn-shop"><a href="/produto/compra/{{produtos_produtos[0]}}">Comprar</a></button>
             </div>
         </div>
-
-        <div class="news-section-item item-2">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/pexels-karolina-grabowska-4736014.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="news-section-item item-1">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/pexels-valeria-boltneva-1961795.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="news-section-item item-2">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/pexels-kade-jermark-1557980.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="news-section-item item-1">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/laura-chouette-2XNmSt0peJY-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="news-section-item item-2">
-            <div class="news-section-item-div">
-                <img class="news-section-item-img" src="{{url_for('static',filename='./img/non-YTCxJqtzmVk-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="news-section-item-description">
-                <p class="news-section-item-description--perfume-name">Coco Channell</p>
-                <p class="news-section-item-description--perfume-price">20.000 kz</p>
-                <button class="news-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
+        {% endfor %}
     </section>
 
     <section class="second-section">
@@ -259,40 +116,18 @@
     </section>
 
     <section class="promotion-section">
+        {% for produtos_mais_vendidos in mais_vendidos %}
         <div class="promotion-section-item one-promotion">
             <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/sara-saleh-cpisiUDKAqE-unsplash.jpg')}}" alt="" srcset="">
+                <img class="promotion-section-item-img" src="{{image_static_url + produtos_mais_vendidos[4]}}" alt="" srcset="">
             </div>
             <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
+                <p class="promotion-section-item-description--perfume-name">{{produtos_mais_vendidos[1]}}</p>
+                <p class="promotion-section-item-description--perfume-price">{{produtos_mais_vendidos[5]}}</p>
+                <button class="promotion-section-item-description--btn-shop"><a href="/produto/compra/{{produtos_mais_vendidos[0]}}">Comprar</a></button>
             </div>
         </div>
-
-        <div class="promotion-section-item two-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/karly-jones-4i9ef6xU738-unsplash.jpg')}}" alt=""
-                    srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
-        <div class="promotion-section-item three-promotion">
-            <div class="promotion-section-item-div">
-                <img class="promotion-section-item-img" src="{{url_for('static',filename='./img/hans-vivek-nKhWFgcUtdk-unsplash.jpg')}}" alt="" srcset="">
-            </div>
-            <div class="promotion-section-item-description">
-                <p class="promotion-section-item-description--perfume-name">Coco Channell</p>
-                <p class="promotion-section-item-description--perfume-price">20.000 kz</p>
-                <button class="promotion-section-item-description--btn-shop"><a href="">Comprar</a></button>
-            </div>
-        </div>
-
+        {% endfor %}
     </section>
 
     <footer class="footer">
