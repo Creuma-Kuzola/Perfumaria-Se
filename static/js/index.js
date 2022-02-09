@@ -4,7 +4,7 @@ let quoteIndex = 0;
 const basePictureUrl = '/static/./img/'
 const quoteCircles = document.querySelectorAll('.div-fifth-section-description-div-circles--item')
 
-fetch('http://127.0.0.1:5000/get/testemunho')
+fetch('http://127.0.0.1:5000/testemunhosdosclientes/get/testemunho')
 .then(res => res.json())
 .then(data => {
     
@@ -20,9 +20,6 @@ fetch('http://127.0.0.1:5000/get/testemunho')
     console.log('erro')
     console.log(error)
 })
-
-
-alert('quotes fora', quotes)
 
 setInterval(() => {
     quoteCircles[quoteIndex].classList.add('active-item-quote')
@@ -41,8 +38,6 @@ setInterval(() => {
     } else {
         quoteIndex++;
     }
-
-    
 
 }, 3000)
 
