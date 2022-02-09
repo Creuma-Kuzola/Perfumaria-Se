@@ -1,4 +1,4 @@
-/*function formNewsletterValidation(e){
+function formNewsletterValidation(e){
     e.preventDefalut()
     const nome = document.getElementById('nome')
     const email = document.getElementById('email')
@@ -25,4 +25,3 @@ $('#btn-send').click(function(e) {
         }
     });
 });
-*/

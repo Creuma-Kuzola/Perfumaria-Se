@@ -17,7 +17,7 @@ const quotes = [{
     {
         img: 'pexels-vinicius-wiesehofer-1130626.jpg',
         name: 'Rosied Delgado',
-        quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo! '
+        quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo muito que comprem perfumes aqui!'
     },
 
     {

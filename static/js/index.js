@@ -1,30 +1,31 @@
-const quotes = [ 
-    
-    {
-        img: '20201031_140502~2.jpg',
-        name: 'Creuma Matias',
-        quote: 'Tem um conceito completamente diferente das perfumarias convencionais e creio que seja por isso que tem se destacado e cumprido com o seu propósito'
-    },
-    {
-        img: 'tahiti-spears-Me-MSv_dUNU-unsplash.jpg',
-        name: 'Ana Emanuela',
-        quote: 'Sou uma mulher mais segura graças a Sê e ao seu propósito. Recomendo! '
-    },
-    
-    {
-        img: 'logan-weaver-yRpe13BHdKw-unsplash.jpg',
-        name: 'Suzete Lukeny',
-        quote: 'Eu gostei tanto de estudar fazer comprar na Sê porque os funcionarários eram super pacientes e profissionais. E queriam que eu escolhesse exatamente o perfume de que realmente gosto'
-    }
-]
-
-
+var frase = {}
+let quotes = []
 let quoteIndex = 0;
 const basePictureUrl = '/static/./img/'
 const quoteCircles = document.querySelectorAll('.div-fifth-section-description-div-circles--item')
+
+fetch('http://127.0.0.1:5000/get/testemunho')
+.then(res => res.json())
+.then(data => {
+    
+    for(var i=0;i<=2; i++)
+    {
+        var j = 3;
+        frase = { img: data.result[i][j], name: data.result[i][j-1],quote: data.result[i][j-2]}
+        quotes[i] = frase;
+    }
+    console.log('quotes', quotes)
+})
+.catch(error => {
+    console.log('erro')
+    console.log(error)
+})
+
+
+alert('quotes fora', quotes)
+
 setInterval(() => {
     quoteCircles[quoteIndex].classList.add('active-item-quote')
-    console.log(quotes[quoteIndex])
     renderQuote(quotes[quoteIndex])
 
     if(quoteIndex==0) {
