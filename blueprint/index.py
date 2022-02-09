@@ -8,11 +8,11 @@ index = Blueprint('index',__name__,static_folder='static',template_folder='templ
 @index.route('/home')
 def home():
     cursor, conexao = start_connection_db()
-    cursor.execute(f'SELECT * FROM produto WHERE seccao_produto=%s',('promocao',))
+    cursor.execute(f'SELECT * FROM produto WHERE id_produto <= 3')
     promocao = cursor.fetchall()
     print(promocao)
 
-    cursor.execute(f'SELECT * FROM produto WHERE seccao_produto=%s',('novidades',))
+    cursor.execute(f'SELECT * FROM produto WHERE id_produto >3 AND id_produto <=5')
     novidades = cursor.fetchall()
     print(novidades)
 
