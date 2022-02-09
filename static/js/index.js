@@ -54,4 +54,3 @@ function renderQuote(quote){
     document.querySelector('.div-fifth-section-description-p-description').innerText = quote.quote
 }
 
-

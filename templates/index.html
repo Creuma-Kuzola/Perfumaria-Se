@@ -141,9 +141,9 @@
         <div class="orange-circle"></div>
     </section>
 
-    <form class="newsletter-session" method="post">
-        <input class="newsletter-session-input" type="text" id="nome" placeholder="Escreva o seu nome" required>
-        <input class="newsletter-session-input" type="email" id="email" placeholder="Escreva o seu melhor email" required>
+    <form class="newsletter-session" id="form-newsletter" method="post" action="/">
+        <input class="newsletter-session-input" type="text" id="nome" name="nome" placeholder="Escreva o seu nome" required>
+        <input class="newsletter-session-input" type="email" id="email" name="email" placeholder="Escreva o seu melhor email" required>
         <button class="newsletter-session--btn-send" type="submit" id="btn-send">Enviar</button>
     </form>
 
@@ -163,7 +163,7 @@
     <script src="{{url_for('static',filename='./js/index.js')}}"></script>
     <script src="{{url_for('static',filename='./js/validationindex.js')}}"></script>
     <script src="{{url_for('static',filename='./js/menuController.js')}}"></script>
-
+   
 </body>
 
 </html>
